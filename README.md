@@ -19,4 +19,6 @@ You may want to change the value for the moduli number and/or the modulus $p$.
 
 line 21 of the file. It is set to $8$ by default, and you can choose any value less or equal than $64$.
 
-- order to change the modulus $p$, you have to edit the `main.c` file and modify the values in the lines 865, 866 and 867, respectively $~p, -p^{-1} \bmod M \mbox{~and~} M^{-1} \bmod M'$ (see the paper "A software comparison of RNS and PMNS", Algorithm 1 page 2). Please, be careful to ensure that the bound $(n+2)^2\cdot p < M$, as reminded section III.A of the paper, if not, you may have wrong computations.
+- order to change the modulus $p$, you have to edit the `main.c` file and modify the values in the lines 865, 866 and 867, respectively $ p, -p^{-1} \bmod M \mbox{ and } M^{-1} \bmod M'$ (see the paper "A software comparison of RNS and PMNS", Algorithm 1 page 2).
+
+Please, be careful to ensure that the bound $(n+2)^2\cdot p < M$, as reminded section III.A of the paper, if not, you may have wrong computations.
